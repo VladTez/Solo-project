@@ -1,0 +1,35 @@
+.gallery{
+    width: 960px;
+    margin: 2rem auto;
+      
+}
+
+.gallery-title{
+    @include flex(center, center, column);
+    
+    h2{
+        display: flex;
+        align-self: center;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-size: 3rem;
+        font-family: 'Poller One', sans-serif;
+        text-transform: uppercase;
+        background-color: $main-color;
+        color: #fff;
+    }    
+}
+
+.gallery-photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 18px;
+
+    img{
+        opacity: 0.8;
+        border: 2px solid #000;
+    }
+}
+.gallery-photo img:hover{
+    opacity: 1;
+}

@@ -1,0 +1,73 @@
+.blog{
+    width: 940px;
+    margin: 2rem auto;       
+}
+
+.blog-title{
+    @include flex(center, center, column);
+    
+    h2{
+        display: flex;
+        align-self: center;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-size: 3rem;
+        font-family: 'Poller One', sans-serif;
+        text-transform: uppercase;
+        background-color: $main-color;
+        color: #fff;
+    }    
+}
+.blog-content{
+    @include flex(space-between, center, row);
+    border: 2px solid black;
+    margin: 1rem 0rem;
+  
+}
+.blog-photo{
+    width: 400px;
+    margin: 0;
+    img{
+        margin: 1rem;
+    }
+    a{
+        opacity: 0.8;
+    }
+}
+.blog-text{
+    @include flex(center, center, column);
+    flex-wrap: wrap;
+    text-align: center;
+    width: 540px; 
+    h3{
+        margin: 2rem;
+        text-transform: uppercase;;
+    }
+    p{
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1rem;
+        font-size: 2rem;     
+        color: #fff;
+        background-color: $main-color;
+    }
+}
+.blog-text{
+    h3,p,a{
+        display: flex;
+        align-self: center;
+    }
+}
+.blog-text a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.blog-photo a:hover{
+    opacity: 1.0;
+
+}

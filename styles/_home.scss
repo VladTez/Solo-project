@@ -1,0 +1,148 @@
+.header{
+    width: 60%;
+    margin: 3rem auto;
+    min-height: 20vh;
+    @include flex(center, center, column);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;     
+}
+
+nav {
+    width: 60%;
+    margin: auto;
+    padding: 0rem 1rem;
+    @include flex(center, center, row);
+    
+    ul{
+        margin: 2rem 2rem 0rem;
+        padding: 4rem 0rem 2rem;
+        @include flex(space-around, center, row);
+        flex: 1 1 20rem;
+    }
+    li{
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        color: rgb(37, 37, 37);
+        line-height: 1.2;
+        list-style: none;
+        text-align: center;
+      }
+    a{
+        padding: 0rem 1rem;
+        color: $main-color;
+        text-decoration: none;
+     }
+     a:hover{
+         color: $color;
+     }
+}
+
+/*Main page content*/
+.section1{
+    position: relative;
+    height: 554px;
+    background-image: url("../images/the-beacon.jpg");
+    
+}
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h2{
+        align-self: flex-start;
+        text-transform: uppercase;;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-family: 'Poller One', cursive;        
+        background-color: #fff;
+    }
+    span, a{
+        align-self: flex-start;
+        color: #fff;
+    }
+    span{
+        margin: 1rem 0rem;
+        padding: 1rem;
+        background-color: $main-color;
+    }
+    a{
+        padding: 2rem 3rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: $color;
+    }
+    a:hover{
+        background-color:  rgb(12, 179, 170);
+    }
+}
+
+.section2{
+    width: 70%;
+    margin: 5rem auto;
+    @include flex(space-around, center, row);
+    flex-wrap: wrap;
+}
+.card{
+    cursor: pointer;
+    h3{
+        margin: 3rem 0rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Poller One', sans-serif;
+        color: #000;
+    }
+    a{
+        text-decoration: none;
+    }
+    img{
+        border: solid 2px #000;
+        opacity: 0.8;
+    }
+    img:hover{
+        opacity: 1;
+    }
+}
+
+.footer{
+    min-height: 20vh;
+    background-color: $main-color;
+    @include flex(space-around, center, row);
+    flex-wrap: wrap;
+    h4{
+        display: flex;
+        align-self: center;
+        color: #fff;
+    }
+    ul{
+        list-style: none;
+        
+        @include flex(center, center, row);
+    }
+    li{
+        display: flex;
+        align-self: center;
+        margin: 1rem 0rem;
+        padding: 0rem 1rem;
+    }
+    .facebook:hover{
+        content: url(../images/icons/icon-facebook-hover.jpg);
+    }
+    .googleplus:hover{
+        content: url(../images/icons/icon-googleplus-hover.jpg);
+    }
+    .pinterest:hover{
+        content: url(../images/icons/icon-pinterest-hover.jpg);
+    }
+    .twitter:hover{
+        content: url(../images/icons/icon-twitter-hover.jpg);
+    }
+}
+

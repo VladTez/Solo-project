@@ -1,0 +1,38 @@
+.about{
+    @include flex(center, center, column);
+    width: 62rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    text-align: center;
+
+    h1{
+        align-self: center;
+        padding: 2rem 3rem;
+        margin: 1rem 4rem 0;
+        text-transform: uppercase;
+        font-family: 'Poller One', sans-serif;
+        font-size: 3.2rem;
+        background-color: $main-color;
+        color: #fff;
+    
+    }
+    img{
+        align-self: center;
+        margin: 2rem 0;
+        width: 62rem;
+        height: 30rem;
+        border: solid 2px #000;
+    }
+}
+.text-content{
+    flex-wrap: wrap;
+    width: 52rem;
+    align-self: center;
+    h3{
+        margin-top: 2.5rem;
+    }
+    p{
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}

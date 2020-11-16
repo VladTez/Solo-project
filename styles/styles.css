@@ -1,0 +1,631 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+li,
+button,
+label,
+input,
+p,
+span {
+  font-size: 2rem;
+}
+
+a {
+  font-size: 1.6rem;
+}
+
+nav > ul {
+  text-transform: uppercase;
+}
+
+.active {
+  color: #0ba39c;
+}
+
+.header {
+  width: 60%;
+  margin: 3rem auto;
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  width: 60%;
+  margin: auto;
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul {
+  margin: 2rem 2rem 0rem;
+  padding: 4rem 0rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+nav li {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #252525;
+  line-height: 1.2;
+  list-style: none;
+  text-align: center;
+}
+
+nav a {
+  padding: 0rem 1rem;
+  color: #252525;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0ba39c;
+}
+
+/*Main page content*/
+.section1 {
+  position: relative;
+  height: 554px;
+  background-image: url("../images/the-beacon.jpg");
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  font-family: 'Poller One', cursive;
+  background-color: #fff;
+}
+
+.content span, .content a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #fff;
+}
+
+.content span {
+  margin: 1rem 0rem;
+  padding: 1rem;
+  background-color: #252525;
+}
+
+.content a {
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #0ba39c;
+}
+
+.content a:hover {
+  background-color: #0cb3aa;
+}
+
+.section2 {
+  width: 70%;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card h3 {
+  margin: 3rem 0rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Poller One', sans-serif;
+  color: #000;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card img {
+  border: solid 2px #000;
+  opacity: 0.8;
+}
+
+.card img:hover {
+  opacity: 1;
+}
+
+.footer {
+  min-height: 20vh;
+  background-color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #fff;
+}
+
+.footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 1rem 0rem;
+  padding: 0rem 1rem;
+}
+
+.footer .facebook:hover {
+  content: url(../images/icons/icon-facebook-hover.jpg);
+}
+
+.footer .googleplus:hover {
+  content: url(../images/icons/icon-googleplus-hover.jpg);
+}
+
+.footer .pinterest:hover {
+  content: url(../images/icons/icon-pinterest-hover.jpg);
+}
+
+.footer .twitter:hover {
+  content: url(../images/icons/icon-twitter-hover.jpg);
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 62rem;
+  margin: auto;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.about h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 2rem 3rem;
+  margin: 1rem 4rem 0;
+  text-transform: uppercase;
+  font-family: 'Poller One', sans-serif;
+  font-size: 3.2rem;
+  background-color: #252525;
+  color: #fff;
+}
+
+.about img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 2rem 0;
+  width: 62rem;
+  height: 30rem;
+  border: solid 2px #000;
+}
+
+.text-content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 52rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.text-content h3 {
+  margin-top: 2.5rem;
+}
+
+.text-content p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+.gallery {
+  width: 960px;
+  margin: 2rem auto;
+}
+
+.gallery-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gallery-title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  font-size: 3rem;
+  font-family: 'Poller One', sans-serif;
+  text-transform: uppercase;
+  background-color: #252525;
+  color: #fff;
+}
+
+.gallery-photo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 18px;
+}
+
+.gallery-photo img {
+  opacity: 0.8;
+  border: 2px solid #000;
+}
+
+.gallery-photo img:hover {
+  opacity: 1;
+}
+
+.blog {
+  width: 940px;
+  margin: 2rem auto;
+}
+
+.blog-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  font-size: 3rem;
+  font-family: 'Poller One', sans-serif;
+  text-transform: uppercase;
+  background-color: #252525;
+  color: #fff;
+}
+
+.blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid black;
+  margin: 1rem 0rem;
+}
+
+.blog-photo {
+  width: 400px;
+  margin: 0;
+}
+
+.blog-photo img {
+  margin: 1rem;
+}
+
+.blog-photo a {
+  opacity: 0.8;
+}
+
+.blog-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  width: 540px;
+}
+
+.blog-text h3 {
+  margin: 2rem;
+  text-transform: uppercase;
+}
+
+.blog-text p {
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+.blog-text a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #252525;
+}
+
+.blog-text h3, .blog-text p, .blog-text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.blog-text a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.blog-photo a:hover {
+  opacity: 1.0;
+}
+
+.contact {
+  width: 940px;
+  margin: 2rem auto;
+}
+
+.contact-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  font-size: 3rem;
+  font-family: 'Poller One', sans-serif;
+  text-transform: uppercase;
+  background-color: #252525;
+  color: #fff;
+}
+
+.contact-form {
+  width: 620px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form form {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+  margin: 1rem 0rem;
+  border: 1px solid #000;
+  border-radius: 1rem;
+}
+
+.contact-form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.contact-form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  background-color: #252525;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

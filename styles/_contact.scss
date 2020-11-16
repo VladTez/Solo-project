@@ -1,0 +1,50 @@
+.contact{
+    width: 940px;
+    margin: 2rem auto;       
+}
+
+.contact-title{
+    @include flex(center, center, column);
+    
+    h2{
+        display: flex;
+        align-self: center;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-size: 3rem;
+        font-family: 'Poller One', sans-serif;
+        text-transform: uppercase;
+        background-color: $main-color;
+        color: #fff;
+    }    
+}
+ .contact-form{
+        width: 620px;
+        margin: auto;
+        @include flex(center, center, column);
+        
+        form{
+            width: 500px;
+            @include flex(center, center, column);
+            text-align: center;
+        }
+      input, textarea{
+        margin: 1rem 0rem;
+        border: 1px solid #000;
+        border-radius: 1rem;
+      }
+      textarea{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.6rem;
+          text-align: center;
+      }             
+}
+.contact-form  button{
+    align-self: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+} 
